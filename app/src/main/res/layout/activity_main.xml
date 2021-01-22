@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewQuestion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
@@ -14,7 +15,7 @@
         android:layout_weight="1"
         android:text="Question"
         android:textAlignment="center"
-        android:textColor="@color/blue"
+        android:textColor="@color/primary_color"
         android:textSize="35sp"
         android:textStyle="bold" />
 
@@ -32,7 +33,7 @@
         android:id="@+id/btnAnswer_3"
         style="@style/button"
         android:text="Answer 3" />
-    
+
     <Button
         android:id="@+id/btnAnswer_4"
         style="@style/button"
