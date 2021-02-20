@@ -14,6 +14,7 @@ public class Questions {
 
     TextView textViewQuestion;
     Button[] btnAnswer = new Button[4];
+    String goodAnswer;
 
     // Debug
     private static final String TAG = "Questions";
@@ -23,21 +24,20 @@ public class Questions {
         this.activity = activity;
 
         textViewQuestion = activity.findViewById(R.id.textViewQuestion);
-        btnAnswer[0] = activity.findViewById(R.id.btnAnswer_1);
-        btnAnswer[1] = activity.findViewById(R.id.btnAnswer_2);
-        btnAnswer[2] = activity.findViewById(R.id.btnAnswer_3);
-        btnAnswer[3] = activity.findViewById(R.id.btnAnswer_4);
+        btnAnswer[0] = activity.findViewById(R.id.btnAnswer_0);
+        btnAnswer[1] = activity.findViewById(R.id.btnAnswer_1);
+        btnAnswer[2] = activity.findViewById(R.id.btnAnswer_2);
+        btnAnswer[3] = activity.findViewById(R.id.btnAnswer_3);
     }
 
-    public void askQuestion() {
+    public String askQuestion() {
 
-        String question = "";
+        String question;
         String[] answer = new String[4];
 
         // Generate random question
         Random random = new Random();
-        int randomQuestion = random.nextInt(3 - 0) + 0;
-        Log.d(TAG, "askQuestion: " + randomQuestion);
+        int randomQuestion = random.nextInt(4 - 0) + 0;
 
         switch (randomQuestion) {
             case 0:
@@ -53,6 +53,7 @@ public class Questions {
                 answer[1] = "1999";
                 answer[2] = "1998";
                 answer[3] = "L'an 1";
+                goodAnswer = "1998";
                 break;
             case 2:
                 question = "What does \"FTP\" stand for in the computer and internet world?";
@@ -60,6 +61,7 @@ public class Questions {
                 answer[1] = "Force Tripe Prout";
                 answer[2] = "File Transfer Protocol";
                 answer[3] = "La réponse D";
+                goodAnswer = "File Transfer Protocol";
                 break;
             default:
                 question = "What is the country top-level domain of Belgium?";
@@ -67,6 +69,7 @@ public class Questions {
                 answer[1] = "The .be domain";
                 answer[2] = ".com";
                 answer[3] = ".lo";
+                goodAnswer = "The .be domain";
                 break;
         }
 
@@ -75,5 +78,6 @@ public class Questions {
         for (int i = 0; i < 4; i++)
             btnAnswer[i].setText(answer[i]);
 
+        return goodAnswer;
     }
 }
