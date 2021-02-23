@@ -31,7 +31,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -39,7 +39,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/art" />
 
                     <TextView
@@ -64,7 +64,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -72,7 +72,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/biology" />
 
                     <TextView
@@ -98,7 +98,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -106,7 +106,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/dinosaur" />
 
                     <TextView
@@ -132,7 +132,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -140,7 +140,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/movie" />
 
                     <TextView
@@ -166,7 +166,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -174,7 +174,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/geography" />
 
                     <TextView
@@ -200,7 +200,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -208,7 +208,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/computer" />
 
                     <TextView
@@ -234,7 +234,7 @@
 
                 <LinearLayout
                     android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -242,7 +242,7 @@
                     <ImageView
                         android:layout_width="125dp"
                         android:layout_height="125dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:src="@drawable/science" />
 
                     <TextView
