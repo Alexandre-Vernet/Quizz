@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
-        finish();
-
         textViewQuestion = findViewById(R.id.textViewQuestion);
 
         // Buttons
@@ -35,13 +32,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAnswer[2] = findViewById(R.id.btnAnswer_2);
         btnAnswer[3] = findViewById(R.id.btnAnswer_3);
 
-
         // Implement buttons
         for (int i = 0; i < 4; i++)
             btnAnswer[i].setOnClickListener(this);
 
-        // Generate question
-        goodAnswer = new Questions(this, this).askQuestion();
+        getCategory();
+    }
+
+    // Get category
+    public String getCategory() {
+        String category = getIntent().getStringExtra("category");
+
+        switch (category) {
+            // Generate question
+            case "computer":
+                goodAnswer = new Questions(this, this).computer();
+                break;
+            case "art":
+                goodAnswer = new Questions(this, this).art();
+                break;
+        }
+
+        return category;
     }
 
     @Override
@@ -77,18 +89,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
     public void goodAnswer() {
-        Snackbar.make(textViewQuestion, "Good answer !", 750)
+        Snackbar.make(textViewQuestion, "Good answer !", 500)
                 .show();
 
         // Wait 1/4 s and show next question
-        new Handler().postDelayed(() -> goodAnswer = new Questions(this, this).askQuestion(), 750);
+        new Handler().postDelayed(() -> getCategory(), 500);
     }
 
 
     public void badAnswer() {
         Snackbar.make(findViewById(R.id.btnAnswer_3), "Bad answer !", Snackbar.LENGTH_SHORT)
                 .show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+        finish();
     }
 }
