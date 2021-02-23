@@ -118,7 +118,7 @@ public class Questions {
 
         // Generate random question
         Random random = new Random();
-        int randomQuestion = random.nextInt(4 - 0) + 0;
+        int randomQuestion = random.nextInt(10 - 0) + 0;
 
         switch (randomQuestion) {
             case 0:
@@ -200,6 +200,136 @@ public class Questions {
                 answer[2] = "Florence";
                 answer[3] = "Bruxelles";
                 goodAnswer = "Florence";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+    public String animals() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(13 - 0) + 0;
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a bichon";
+                answer[0] = "Dog";
+                answer[1] = "Bird";
+                answer[2] = "The little dear";
+                answer[3] = "Cat";
+                goodAnswer = "Dog";
+                break;
+            case 1:
+                question = "What is a macaw";
+                answer[0] = "Horse";
+                answer[1] = "Parrot";
+                answer[2] = "Chicken farmer";
+                answer[3] = "Marrin mammal";
+                goodAnswer = "Parrot";
+                break;
+            case 2:
+                question = "What animal was Flipper in the TV series";
+                answer[0] = "Dolphin";
+                answer[1] = "Seal";
+                answer[2] = "Walrus";
+                answer[3] = "Whale";
+                goodAnswer = "Dolphin";
+                break;
+            case 3:
+                question = "What animal is the female of the wild boar";
+                answer[0] = "Sow";
+                answer[1] = "Hase";
+                answer[2] = "Trout";
+                answer[3] = "Laie";
+                goodAnswer = "Laie";
+                break;
+            case 4:
+                question = "How many legs do insects have";
+                answer[0] = "2";
+                answer[1] = "6";
+                answer[2] = "8";
+                answer[3] = "10";
+                goodAnswer = "6";
+                break;
+            case 5:
+                question = "Among these animals, which whistles";
+                answer[0] = "Cicada";
+                answer[1] = "Peacock";
+                answer[2] = "Swallow";
+                answer[3] = "Snake";
+                goodAnswer = "Snake";
+                break;
+            case 6:
+                question = "In which category of insect is the butterfly";
+                answer[0] = "Hymenoptera";
+                answer[1] = "Dipterers";
+                answer[2] = "Isoptera";
+                answer[3] = "Lepidoptera";
+                goodAnswer = "Lepidoptera";
+                break;
+            case 7:
+                question = "After the elephant, which land animal is the heaviest";
+                answer[0] = "Hippopotamus";
+                answer[1] = "Rhinoceros";
+                answer[2] = "Whale";
+                answer[3] = "Gorilla";
+                goodAnswer = "Rhinoceros";
+                break;
+            case 8:
+                question = "What type of animal is an ostrich";
+                answer[0] = "Mammal";
+                answer[1] = "Bird";
+                answer[2] = "Fish";
+                answer[3] = "Insect";
+                goodAnswer = "Bird";
+                break;
+            case 9:
+                question = "What is the other name of the cobra";
+                answer[0] = "Viper";
+                answer[1] = "Boa";
+                answer[2] = "Python";
+                answer[3] = "Naja";
+                goodAnswer = "Bird";
+                break;
+            case 10:
+                question = "Among these animals, which is the fastest";
+                answer[0] = "Cheetah";
+                answer[1] = "Leopard";
+                answer[2] = "Panther";
+                answer[3] = "Jaguar";
+                goodAnswer = "Leopard";
+                break;
+            case 11:
+                question = "What animal lives in a spawning ground";
+                answer[0] = "Fox";
+                answer[1] = "Salmon";
+                answer[2] = "Koala";
+                answer[3] = "Gander";
+                goodAnswer = "Salmon";
+                break;
+            case 12:
+                question = "How many branches does a starfish have";
+                answer[0] = "4";
+                answer[1] = "5";
+                answer[2] = "8";
+                answer[3] = "12";
+                goodAnswer = "5";
+                break;
+            default:
+                question = "Which animal is the emblem of the United States";
+                answer[0] = "Eagle";
+                answer[1] = "Snake";
+                answer[2] = "Ostrich";
+                answer[3] = "Tiger";
+                goodAnswer = "Eagle";
         }
 
         // Display questions

@@ -4,7 +4,7 @@
     <string name="computer_science">Computer</string>
     <string name="science">Science</string>
     <string name="movie_and_tv">Movie and TV</string>
-    <string name="dinosaurs">Dinosaurs</string>
     <string name="biology">Biology</string>
     <string name="art_and_culture">Art / culture</string>
+    <string name="animals">Animals</string>
 </resources>
