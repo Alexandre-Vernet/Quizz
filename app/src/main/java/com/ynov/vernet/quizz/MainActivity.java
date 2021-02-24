@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             AlertDialog alertDialog = new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle(R.string.leave)
-                    .setMessage(R.string.stop_game_progress)
+                    .setMessage(R.string.stop_current_game)
                     .setPositiveButton(R.string.yes, (dialogInterface, i) -> {
                         super.onBackPressed();
                         startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
