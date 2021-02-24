@@ -1,14 +1,18 @@
 package com.ynov.vernet.quizz;
 
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
+import android.widget.GridLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener {
 
+    GridLayout gridLayout;
     CardView[] cardViews = new CardView[7];
 
     @Override
@@ -16,6 +20,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
+        gridLayout = findViewById(R.id.gridLayout);
         cardViews[0] = findViewById(R.id.art);
         cardViews[1] = findViewById(R.id.biology);
         cardViews[2] = findViewById(R.id.animals);
@@ -26,6 +31,29 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
         for (int i = 0; i < 7; i++)
             cardViews[i].setOnClickListener(this);
+
+        int screenSize = getScreenSize();
+
+        switch (screenSize) {
+            case 1100:
+                gridLayout.setColumnCount(3);
+                break;
+            case 2100:
+                gridLayout.setColumnCount(4);
+                break;
+            case 2400:
+                gridLayout.setColumnCount(5);
+                break;
+
+        }
+    }
+
+    public int getScreenSize() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+        return size.x;
     }
 
     @Override
