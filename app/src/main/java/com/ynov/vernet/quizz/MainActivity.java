@@ -7,15 +7,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView textViewQuestion;
     Button[] btnAnswer = new Button[4];
     String goodAnswer;
+    int score = 0;
+    int countQuestion = 0;
 
     private static final String TAG = "MainActivity";
 
@@ -36,11 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < 4; i++)
             btnAnswer[i].setOnClickListener(this);
 
+        // Get category sent via menu
         getCategory();
     }
 
-    // Get category
-    public String getCategory() {
+    // Get category of question
+    public void getCategory() {
         String category = getIntent().getStringExtra("category");
 
         switch (category) {
@@ -55,55 +57,77 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 goodAnswer = new Questions(this, this).animals();
                 break;
         }
-
-        return category;
     }
 
     @Override
     public void onClick(View v) {
+
+        // Generate 10 questions
+        if (this.countQuestion >= 10) {
+            gameDone();
+            return;
+        }
+
         switch (v.getId()) {
             case R.id.btnAnswer_0:
                 if (goodAnswer == btnAnswer[0].getText())
                     goodAnswer();
-                else
-                    badAnswer();
                 break;
 
             case R.id.btnAnswer_1:
                 if (goodAnswer == btnAnswer[1].getText())
                     goodAnswer();
-                else
-                    badAnswer();
                 break;
 
             case R.id.btnAnswer_2:
                 if (goodAnswer == btnAnswer[2].getText())
                     goodAnswer();
-                else
-                    badAnswer();
                 break;
 
             case R.id.btnAnswer_3:
                 if (goodAnswer == btnAnswer[3].getText())
                     goodAnswer();
-                else
-                    badAnswer();
                 break;
         }
+
+        // Get next question
+        new Handler().postDelayed(this::getCategory, 200);
+        countQuestion++;
     }
 
     public void goodAnswer() {
-        Snackbar.make(textViewQuestion, "Good answer !", 500)
-                .show();
-
-        // Wait 1/4 s and show next question
-        new Handler().postDelayed(() -> getCategory(), 500);
+        this.score++;
     }
 
+    public void gameDone() {
 
-    public void badAnswer() {
-        Snackbar.make(findViewById(R.id.btnAnswer_3), "Bad answer !", Snackbar.LENGTH_SHORT)
+        // Around score
+        if (this.score < 0)
+            this.score = 0;
+
+        // Show score
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle(R.string.done)
+                .setMessage(getString(R.string.your_score_is, this.score))
+                .setPositiveButton(R.string.play_again, (dialogInterface, i) -> {
+
+                    // Reset score
+                    this.score = 0;
+                    this.countQuestion = 0;
+
+                    // Play again
+                    new Handler().postDelayed(this::getCategory, 200);
+                })
+                .setNegativeButton(R.string.exit_to_menu, (dialogInterface, i) -> {
+
+                    // Go to main menu
+                    startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+                    finish();
+                })
                 .show();
+        alertDialog.setCanceledOnTouchOutside(false);
+        alertDialog.setCancelable(false);
     }
 
     @Override

@@ -7,4 +7,8 @@
     <string name="biology">Biology</string>
     <string name="art_and_culture">Art / culture</string>
     <string name="animals">Animals</string>
+    <string name="done">Done !</string>
+    <string name="your_score_is">\Your score is %1$d / 10</string>
+    <string name="play_again">Play again</string>
+    <string name="exit_to_menu">Exit to menu</string>
 </resources>

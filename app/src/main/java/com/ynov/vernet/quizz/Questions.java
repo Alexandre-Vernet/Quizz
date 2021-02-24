@@ -111,6 +111,7 @@ public class Questions {
 
         return goodAnswer;
     }
+
     public String art() {
 
         String question;
@@ -209,6 +210,7 @@ public class Questions {
 
         return goodAnswer;
     }
+
     public String animals() {
 
         String question;

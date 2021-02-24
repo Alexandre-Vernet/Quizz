@@ -24,14 +24,15 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         cardViews[5] = findViewById(R.id.computer);
         cardViews[6] = findViewById(R.id.science);
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 7; i++)
             cardViews[i].setOnClickListener(this);
-        }
     }
 
     @Override
     public void onClick(View v) {
+
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
         switch (v.getId()) {
             case R.id.computer:
                 intent.putExtra("category", "computer");
