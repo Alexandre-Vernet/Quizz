@@ -11,4 +11,8 @@
     <string name="your_score_is">\Your score is %1$d / 10</string>
     <string name="play_again">Play again</string>
     <string name="exit_to_menu">Exit to menu</string>
+    <string name="leave">Leave ?</string>
+    <string name="stop_game_progress">Stop game in progress ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

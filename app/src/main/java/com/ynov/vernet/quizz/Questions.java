@@ -36,7 +36,7 @@ public class Questions {
 
         // Generate random question
         Random random = new Random();
-        int randomQuestion = random.nextInt(8 - 0) + 0;
+        int randomQuestion = random.nextInt(8);
 
         switch (randomQuestion) {
             case 0:
@@ -119,7 +119,7 @@ public class Questions {
 
         // Generate random question
         Random random = new Random();
-        int randomQuestion = random.nextInt(9 - 0) + 0;
+        int randomQuestion = random.nextInt(9);
 
         switch (randomQuestion) {
             case 0:
@@ -218,7 +218,7 @@ public class Questions {
 
         // Generate random question
         Random random = new Random();
-        int randomQuestion = random.nextInt(14 - 0) + 0;
+        int randomQuestion = random.nextInt(14);
 
         switch (randomQuestion) {
             case 0:

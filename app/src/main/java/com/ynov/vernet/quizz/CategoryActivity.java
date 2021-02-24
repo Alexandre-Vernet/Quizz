@@ -47,7 +47,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         if (screenSize > 2100)
             gridLayout.setColumnCount(4);
 
-        if (screenSize > 2400)
+        if (screenSize > 3100)
             gridLayout.setColumnCount(5);
     }
 
