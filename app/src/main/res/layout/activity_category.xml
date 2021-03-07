@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".CategoryActivity">
 
     <LinearLayout
@@ -43,6 +41,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/art_and_culture"
                         android:src="@drawable/art" />
 
                     <TextView
@@ -76,6 +75,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/biology"
                         android:src="@drawable/biology" />
 
                     <TextView
@@ -110,6 +110,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/animals"
                         android:src="@drawable/animals" />
 
                     <TextView
@@ -144,6 +145,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/movie_and_tv"
                         android:src="@drawable/movie" />
 
                     <TextView
@@ -178,6 +180,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/geography"
                         android:src="@drawable/geography" />
 
                     <TextView
@@ -212,6 +215,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/computer_science"
                         android:src="@drawable/computer" />
 
                     <TextView
@@ -246,6 +250,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/science"
                         android:src="@drawable/science" />
 
                     <TextView
