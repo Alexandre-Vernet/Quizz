@@ -38,19 +38,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/art_and_culture"
                         android:src="@drawable/art" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/art_and_culture"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/art_and_culture" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -72,19 +66,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/biology"
                         android:src="@drawable/biology" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/biology"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/biology" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -107,19 +95,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/animals"
                         android:src="@drawable/animals" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/animals"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/animals" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -142,19 +124,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/movie_and_tv"
                         android:src="@drawable/movie" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/movie_and_tv"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/movie_and_tv" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -177,19 +153,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/geography"
                         android:src="@drawable/geography" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/geography"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/geography" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -212,19 +182,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/computer_science"
                         android:src="@drawable/computer" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/computer_science"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/computer_science" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -247,9 +211,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
-                        android:layout_marginBottom="10dp"
+                        style="@style/category_imageview"
                         android:contentDescription="@string/science"
                         android:src="@drawable/science" />
 
