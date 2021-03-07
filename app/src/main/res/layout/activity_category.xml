@@ -216,12 +216,8 @@
                         android:src="@drawable/science" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/science"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/category_textview"
+                        android:text="@string/science"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
