@@ -10,4 +10,6 @@
 
     <color name="primary_color">#369ee3</color>
     <color name="secondary_color">#3db2ff</color>
+    <color name="wrong_answer">#FF0000</color>
+    <color name="good_answer">#23E800</color>
 </resources>

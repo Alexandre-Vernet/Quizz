@@ -10,12 +10,15 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView textViewQuestion;
     Button[] btnAnswer = new Button[4];
     String goodAnswer;
     int score = 0;
+    int[] id = new int[11];
     int countQuestion = 0;
 
     private static final String TAG = "MainActivity";
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         textViewQuestion = findViewById(R.id.textViewQuestion);
+
+        Arrays.fill(id, 0);
 
         // Buttons
         btnAnswer[0] = findViewById(R.id.btnAnswer_0);
@@ -38,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnAnswer[i].setOnClickListener(this);
 
         // Get category sent via menu
-        getCategory();
+        this.getCategory();
     }
 
     // Get category of question
@@ -62,9 +67,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+        // Implement id
+        this.id[countQuestion]++;
+
         // Generate 10 questions
-        if (this.countQuestion >= 10) {
-            gameDone();
+        if (this.countQuestion >= 1) {     /*10*/
+//            gameDone();
+
+            Intent intent = new Intent(getApplicationContext(), AnswerActivity.class);
+            intent.putExtra("id", id[0]);
+            startActivity(intent);
+            finish();
+
             return;
         }
 
