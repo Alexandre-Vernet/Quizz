@@ -4,7 +4,6 @@
     <string name="computer_science">Computer</string>
     <string name="science">Science</string>
     <string name="movie_and_tv">Movie and TV</string>
-    <string name="biology">Biology</string>
     <string name="art_and_culture">Art / culture</string>
     <string name="animals">Animals</string>
     <string name="done">Done !</string>
@@ -15,4 +14,5 @@
     <string name="stop_current_game">Stop the current game ?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="kitchen">Kitchen</string>
 </resources>

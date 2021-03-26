@@ -129,7 +129,7 @@ public class Questions {
         return goodAnswer;
     }
 
-    public String biology() {
+    public String kitchen() {
 
         String question;
         String[] answer = new String[4];

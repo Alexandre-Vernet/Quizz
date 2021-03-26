@@ -27,7 +27,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
         // Cards
         cardViews[0] = findViewById(R.id.art);
-        cardViews[1] = findViewById(R.id.biology);
+        cardViews[1] = findViewById(R.id.kitchen);
         cardViews[2] = findViewById(R.id.animals);
         cardViews[3] = findViewById(R.id.movies);
         cardViews[4] = findViewById(R.id.geography);
@@ -70,8 +70,8 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.biology:
-                intent.putExtra("category", "biology");
+            case R.id.kitchen:
+                intent.putExtra("category", "kitchen");
                 startActivity(intent);
                 finish();
                 break;
