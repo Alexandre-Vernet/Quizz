@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="category_cardview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.5dp</item>
+    </style>
+
+    <style name="category_linearlayout">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
     <style name="category_textview">
         <item name="android:textSize">24sp</item>
         <item name="android:textAlignment">center</item>
