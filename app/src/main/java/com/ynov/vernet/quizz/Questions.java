@@ -29,88 +29,6 @@ public class Questions {
         btnAnswer[3] = activity.findViewById(R.id.btnAnswer_3);
     }
 
-    public String computer() {
-
-        String question;
-        String[] answer = new String[4];
-
-        // Generate random question
-        Random random = new Random();
-        int randomQuestion = random.nextInt(8);
-
-        switch (randomQuestion) {
-            case 0:
-                question = "What is the name of the network of computers from which the Internet has emerged?";
-                answer[0] = "Arpanet";
-                answer[1] = "Internet";
-                answer[2] = "MySpace";
-                answer[3] = "Extranet";
-                goodAnswer = "Arpanet";
-                break;
-            case 1:
-                question = "In what year was Google launched on the web?";
-                answer[0] = "2001";
-                answer[1] = "1999";
-                answer[2] = "1998";
-                answer[3] = "L'an 1";
-                goodAnswer = "1998";
-                break;
-            case 2:
-                question = "What does \"FTP\" stand for in the computer and internet world?";
-                answer[0] = "Fa Ta Pa";
-                answer[1] = "Force Tripe Prout";
-                answer[2] = "File Transfer Protocol";
-                answer[3] = "La réponse D";
-                goodAnswer = "File Transfer Protocol";
-                break;
-            case 3:
-                question = "Which unit is an indication for the sound quality of MP3?";
-                answer[0] = "mp3";
-                answer[1] = "Kp";
-                answer[2] = "Pps";
-                answer[3] = "Kbps";
-                goodAnswer = "Kbps";
-                break;
-            case 4:
-                question = "In computing what is Ram short for?";
-                answer[0] = "Rare Access Military";
-                answer[1] = "Random Access Memory";
-                answer[2] = "Ram doesn't exist";
-                answer[3] = "Royal Air Maroc";
-                goodAnswer = "Random Access Memory";
-                break;
-            case 5:
-                question = "In which Nintendo DS game do you have to raise a puppy as well as possible?";
-                answer[0] = "Nintendogs";
-                answer[1] = "Animal crossing";
-                answer[2] = "Super Mario";
-                answer[3] = "Little Horse";
-                goodAnswer = "Nintendogs";
-                break;
-            case 6:
-                question = "What does USB stand for in the computer world?";
-                answer[0] = "Universe Setup Bios";
-                answer[1] = "Universal Secret Bus";
-                answer[2] = "Use Scratch Bitch";
-                answer[3] = "Universal Serial Bus";
-                goodAnswer = "Universal Serial Bus";
-                break;
-            default:
-                question = "What is the country top-level domain of Belgium?";
-                answer[0] = ".fr";
-                answer[1] = "The .be domain";
-                answer[2] = ".com";
-                answer[3] = ".lo";
-                goodAnswer = "The .be domain";
-        }
-
-        // Display questions
-        textViewQuestion.setText(question);
-        for (int i = 0; i < 4; i++)
-            btnAnswer[i].setText(answer[i]);
-
-        return goodAnswer;
-    }
 
     public String art() {
 
@@ -201,6 +119,137 @@ public class Questions {
                 answer[2] = "Florence";
                 answer[3] = "Bruxelles";
                 goodAnswer = "Florence";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
+    public String biology() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a bichon";
+                answer[0] = "Dog";
+                answer[1] = "Bird";
+                answer[2] = "The little dear";
+                answer[3] = "Cat";
+                goodAnswer = "Dog";
+                break;
+            case 1:
+                question = "What is a macaw";
+                answer[0] = "Horse";
+                answer[1] = "Parrot";
+                answer[2] = "Chicken farmer";
+                answer[3] = "Marrin mammal";
+                goodAnswer = "Parrot";
+                break;
+            case 2:
+                question = "What animal was Flipper in the TV series";
+                answer[0] = "Dolphin";
+                answer[1] = "Seal";
+                answer[2] = "Walrus";
+                answer[3] = "Whale";
+                goodAnswer = "Dolphin";
+                break;
+            case 3:
+                question = "What animal is the female of the wild boar";
+                answer[0] = "Sow";
+                answer[1] = "Hase";
+                answer[2] = "Trout";
+                answer[3] = "Laie";
+                goodAnswer = "Laie";
+                break;
+            case 4:
+                question = "How many legs do insects have";
+                answer[0] = "2";
+                answer[1] = "6";
+                answer[2] = "8";
+                answer[3] = "10";
+                goodAnswer = "6";
+                break;
+            case 5:
+                question = "Among these animals, which whistles";
+                answer[0] = "Cicada";
+                answer[1] = "Peacock";
+                answer[2] = "Swallow";
+                answer[3] = "Snake";
+                goodAnswer = "Snake";
+                break;
+            case 6:
+                question = "In which category of insect is the butterfly";
+                answer[0] = "Hymenoptera";
+                answer[1] = "Dipterers";
+                answer[2] = "Isoptera";
+                answer[3] = "Lepidoptera";
+                goodAnswer = "Lepidoptera";
+                break;
+            case 7:
+                question = "After the elephant, which land animal is the heaviest";
+                answer[0] = "Hippopotamus";
+                answer[1] = "Rhinoceros";
+                answer[2] = "Whale";
+                answer[3] = "Gorilla";
+                goodAnswer = "Rhinoceros";
+                break;
+            case 8:
+                question = "What type of animal is an ostrich";
+                answer[0] = "Mammal";
+                answer[1] = "Bird";
+                answer[2] = "Fish";
+                answer[3] = "Insect";
+                goodAnswer = "Bird";
+                break;
+            case 9:
+                question = "What is the other name of the cobra";
+                answer[0] = "Viper";
+                answer[1] = "Boa";
+                answer[2] = "Python";
+                answer[3] = "Naja";
+                goodAnswer = "Bird";
+                break;
+            case 10:
+                question = "Among these animals, which is the fastest";
+                answer[0] = "Cheetah";
+                answer[1] = "Leopard";
+                answer[2] = "Panther";
+                answer[3] = "Jaguar";
+                goodAnswer = "Leopard";
+                break;
+            case 11:
+                question = "What animal lives in a spawning ground";
+                answer[0] = "Fox";
+                answer[1] = "Salmon";
+                answer[2] = "Koala";
+                answer[3] = "Gander";
+                goodAnswer = "Salmon";
+                break;
+            case 12:
+                question = "How many branches does a starfish have";
+                answer[0] = "4";
+                answer[1] = "5";
+                answer[2] = "8";
+                answer[3] = "12";
+                goodAnswer = "5";
+                break;
+            default:
+                question = "Which animal is the emblem of the United States";
+                answer[0] = "Eagle";
+                answer[1] = "Snake";
+                answer[2] = "Ostrich";
+                answer[3] = "Tiger";
+                goodAnswer = "Eagle";
         }
 
         // Display questions
@@ -341,4 +390,481 @@ public class Questions {
 
         return goodAnswer;
     }
+
+    public String movies() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a bichon";
+                answer[0] = "Dog";
+                answer[1] = "Bird";
+                answer[2] = "The little dear";
+                answer[3] = "Cat";
+                goodAnswer = "Dog";
+                break;
+            case 1:
+                question = "What is a macaw";
+                answer[0] = "Horse";
+                answer[1] = "Parrot";
+                answer[2] = "Chicken farmer";
+                answer[3] = "Marrin mammal";
+                goodAnswer = "Parrot";
+                break;
+            case 2:
+                question = "What animal was Flipper in the TV series";
+                answer[0] = "Dolphin";
+                answer[1] = "Seal";
+                answer[2] = "Walrus";
+                answer[3] = "Whale";
+                goodAnswer = "Dolphin";
+                break;
+            case 3:
+                question = "What animal is the female of the wild boar";
+                answer[0] = "Sow";
+                answer[1] = "Hase";
+                answer[2] = "Trout";
+                answer[3] = "Laie";
+                goodAnswer = "Laie";
+                break;
+            case 4:
+                question = "How many legs do insects have";
+                answer[0] = "2";
+                answer[1] = "6";
+                answer[2] = "8";
+                answer[3] = "10";
+                goodAnswer = "6";
+                break;
+            case 5:
+                question = "Among these animals, which whistles";
+                answer[0] = "Cicada";
+                answer[1] = "Peacock";
+                answer[2] = "Swallow";
+                answer[3] = "Snake";
+                goodAnswer = "Snake";
+                break;
+            case 6:
+                question = "In which category of insect is the butterfly";
+                answer[0] = "Hymenoptera";
+                answer[1] = "Dipterers";
+                answer[2] = "Isoptera";
+                answer[3] = "Lepidoptera";
+                goodAnswer = "Lepidoptera";
+                break;
+            case 7:
+                question = "After the elephant, which land animal is the heaviest";
+                answer[0] = "Hippopotamus";
+                answer[1] = "Rhinoceros";
+                answer[2] = "Whale";
+                answer[3] = "Gorilla";
+                goodAnswer = "Rhinoceros";
+                break;
+            case 8:
+                question = "What type of animal is an ostrich";
+                answer[0] = "Mammal";
+                answer[1] = "Bird";
+                answer[2] = "Fish";
+                answer[3] = "Insect";
+                goodAnswer = "Bird";
+                break;
+            case 9:
+                question = "What is the other name of the cobra";
+                answer[0] = "Viper";
+                answer[1] = "Boa";
+                answer[2] = "Python";
+                answer[3] = "Naja";
+                goodAnswer = "Bird";
+                break;
+            case 10:
+                question = "Among these animals, which is the fastest";
+                answer[0] = "Cheetah";
+                answer[1] = "Leopard";
+                answer[2] = "Panther";
+                answer[3] = "Jaguar";
+                goodAnswer = "Leopard";
+                break;
+            case 11:
+                question = "What animal lives in a spawning ground";
+                answer[0] = "Fox";
+                answer[1] = "Salmon";
+                answer[2] = "Koala";
+                answer[3] = "Gander";
+                goodAnswer = "Salmon";
+                break;
+            case 12:
+                question = "How many branches does a starfish have";
+                answer[0] = "4";
+                answer[1] = "5";
+                answer[2] = "8";
+                answer[3] = "12";
+                goodAnswer = "5";
+                break;
+            default:
+                question = "Which animal is the emblem of the United States";
+                answer[0] = "Eagle";
+                answer[1] = "Snake";
+                answer[2] = "Ostrich";
+                answer[3] = "Tiger";
+                goodAnswer = "Eagle";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
+    public String geography() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "With which country France has no border";
+                answer[0] = "Belgium";
+                answer[1] = "Austria";
+                answer[2] = "Swiss";
+                answer[3] = "Spain";
+                goodAnswer = "Austria";
+                break;
+            case 1:
+                question = "What river crosses the city of Lyon";
+                answer[0] = "Garonne";
+                answer[1] = "Seine";
+                answer[2] = "Rhin";
+                answer[3] = "Rhone";
+                goodAnswer = "Rhone";
+                break;
+            case 2:
+                question = "What is the official language of Ireland";
+                answer[0] = "Celtic";
+                answer[1] = "German";
+                answer[2] = "French";
+                answer[3] = "English";
+                goodAnswer = "English";
+                break;
+            case 3:
+                question = "What is the capital of Pakistan";
+                answer[0] = "Islamabad";
+                answer[1] = "Mogadishu";
+                answer[2] = "Kabul";
+                answer[3] = "Karachi";
+                goodAnswer = "Islamabad";
+                break;
+            case 4:
+                question = "What color is on the German flag";
+                answer[0] = "Black, Red, White";
+                answer[1] = "Black, Red, Yellow";
+                answer[2] = "Black, Red, Yellow";
+                answer[3] = "Black, Orange, White";
+                goodAnswer = "Black, Red, Yellow";
+                break;
+            case 5:
+                question = "What is the capital of the Philippines";
+                answer[0] = "Jakarta";
+                answer[1] = "Wellington";
+                answer[2] = "Seoul";
+                answer[3] = "Manila";
+                goodAnswer = "Manila";
+                break;
+            case 6:
+                question = "On which island can we go to Mount Pelée";
+                answer[0] = "Martinique";
+                answer[1] = "Guyana";
+                answer[2] = "Hawaii";
+                answer[3] = "Guadeloupe";
+                goodAnswer = "Martinique";
+                break;
+            case 7:
+                question = "What is the capital of the United States of America";
+                answer[0] = "New-York";
+                answer[1] = "Miami";
+                answer[2] = "Washington DC";
+                answer[3] = "Detroit";
+                goodAnswer = "Washington DC";
+                break;
+            case 8:
+                question = "Which French department has why geography that the 16";
+                answer[0] = "Laude";
+                answer[1] = "L'aveyron";
+                answer[2] = "Le cantal";
+                answer[3] = "La charante";
+                goodAnswer = "La charante";
+                break;
+            case 9:
+                question = "What city is nicknamed the City of Kings";
+                answer[0] = "Petra";
+                answer[1] = "Timbuktu";
+                answer[2] = "Beijing";
+                answer[3] = "Lima";
+                goodAnswer = "Lima";
+                break;
+            case 10:
+                question = "What city is nicknamed the city of seven hills";
+                answer[0] = "Rome";
+                answer[1] = "Paris";
+                answer[2] = "Barcelona";
+                answer[3] = "Lisbon";
+                goodAnswer = "Rome";
+                break;
+            case 11:
+                question = "What city is called the navel of the world";
+                answer[0] = "Cuzco";
+                answer[1] = "Rome";
+                answer[2] = "Baghdad";
+                answer[3] = "Beijing";
+                goodAnswer = "Cuzco";
+                break;
+            case 12:
+                question = "What country is called the flat country";
+                answer[0] = "Netherlands";
+                answer[1] = "Belgium";
+                answer[2] = "Greece";
+                answer[3] = "Portugal";
+                goodAnswer = "Belgium";
+                break;
+            default:
+                question = "How many French departments are there";
+                answer[0] = "99";
+                answer[1] = "101";
+                answer[2] = "108";
+                answer[3] = "113";
+                goodAnswer = "101";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
+    public String computer() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(8);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is the name of the network of computers from which the Internet has emerged?";
+                answer[0] = "Arpanet";
+                answer[1] = "Internet";
+                answer[2] = "MySpace";
+                answer[3] = "Extranet";
+                goodAnswer = "Arpanet";
+                break;
+            case 1:
+                question = "In what year was Google launched on the web?";
+                answer[0] = "2001";
+                answer[1] = "1999";
+                answer[2] = "1998";
+                answer[3] = "L'an 1";
+                goodAnswer = "1998";
+                break;
+            case 2:
+                question = "What does \"FTP\" stand for in the computer and internet world?";
+                answer[0] = "Fa Ta Pa";
+                answer[1] = "Force Tripe Prout";
+                answer[2] = "File Transfer Protocol";
+                answer[3] = "La réponse D";
+                goodAnswer = "File Transfer Protocol";
+                break;
+            case 3:
+                question = "Which unit is an indication for the sound quality of MP3?";
+                answer[0] = "mp3";
+                answer[1] = "Kp";
+                answer[2] = "Pps";
+                answer[3] = "Kbps";
+                goodAnswer = "Kbps";
+                break;
+            case 4:
+                question = "In computing what is Ram short for?";
+                answer[0] = "Rare Access Military";
+                answer[1] = "Random Access Memory";
+                answer[2] = "Ram doesn't exist";
+                answer[3] = "Royal Air Maroc";
+                goodAnswer = "Random Access Memory";
+                break;
+            case 5:
+                question = "In which Nintendo DS game do you have to raise a puppy as well as possible?";
+                answer[0] = "Nintendogs";
+                answer[1] = "Animal crossing";
+                answer[2] = "Super Mario";
+                answer[3] = "Little Horse";
+                goodAnswer = "Nintendogs";
+                break;
+            case 6:
+                question = "What does USB stand for in the computer world?";
+                answer[0] = "Universe Setup Bios";
+                answer[1] = "Universal Secret Bus";
+                answer[2] = "Use Scratch Bitch";
+                answer[3] = "Universal Serial Bus";
+                goodAnswer = "Universal Serial Bus";
+                break;
+            default:
+                question = "What is the country top-level domain of Belgium?";
+                answer[0] = ".fr";
+                answer[1] = "The .be domain";
+                answer[2] = ".com";
+                answer[3] = ".lo";
+                goodAnswer = "The .be domain";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
+    public String science() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a bichon";
+                answer[0] = "Dog";
+                answer[1] = "Bird";
+                answer[2] = "The little dear";
+                answer[3] = "Cat";
+                goodAnswer = "Dog";
+                break;
+            case 1:
+                question = "What is a macaw";
+                answer[0] = "Horse";
+                answer[1] = "Parrot";
+                answer[2] = "Chicken farmer";
+                answer[3] = "Marrin mammal";
+                goodAnswer = "Parrot";
+                break;
+            case 2:
+                question = "What animal was Flipper in the TV series";
+                answer[0] = "Dolphin";
+                answer[1] = "Seal";
+                answer[2] = "Walrus";
+                answer[3] = "Whale";
+                goodAnswer = "Dolphin";
+                break;
+            case 3:
+                question = "What animal is the female of the wild boar";
+                answer[0] = "Sow";
+                answer[1] = "Hase";
+                answer[2] = "Trout";
+                answer[3] = "Laie";
+                goodAnswer = "Laie";
+                break;
+            case 4:
+                question = "How many legs do insects have";
+                answer[0] = "2";
+                answer[1] = "6";
+                answer[2] = "8";
+                answer[3] = "10";
+                goodAnswer = "6";
+                break;
+            case 5:
+                question = "Among these animals, which whistles";
+                answer[0] = "Cicada";
+                answer[1] = "Peacock";
+                answer[2] = "Swallow";
+                answer[3] = "Snake";
+                goodAnswer = "Snake";
+                break;
+            case 6:
+                question = "In which category of insect is the butterfly";
+                answer[0] = "Hymenoptera";
+                answer[1] = "Dipterers";
+                answer[2] = "Isoptera";
+                answer[3] = "Lepidoptera";
+                goodAnswer = "Lepidoptera";
+                break;
+            case 7:
+                question = "After the elephant, which land animal is the heaviest";
+                answer[0] = "Hippopotamus";
+                answer[1] = "Rhinoceros";
+                answer[2] = "Whale";
+                answer[3] = "Gorilla";
+                goodAnswer = "Rhinoceros";
+                break;
+            case 8:
+                question = "What type of animal is an ostrich";
+                answer[0] = "Mammal";
+                answer[1] = "Bird";
+                answer[2] = "Fish";
+                answer[3] = "Insect";
+                goodAnswer = "Bird";
+                break;
+            case 9:
+                question = "What is the other name of the cobra";
+                answer[0] = "Viper";
+                answer[1] = "Boa";
+                answer[2] = "Python";
+                answer[3] = "Naja";
+                goodAnswer = "Bird";
+                break;
+            case 10:
+                question = "Among these animals, which is the fastest";
+                answer[0] = "Cheetah";
+                answer[1] = "Leopard";
+                answer[2] = "Panther";
+                answer[3] = "Jaguar";
+                goodAnswer = "Leopard";
+                break;
+            case 11:
+                question = "What animal lives in a spawning ground";
+                answer[0] = "Fox";
+                answer[1] = "Salmon";
+                answer[2] = "Koala";
+                answer[3] = "Gander";
+                goodAnswer = "Salmon";
+                break;
+            case 12:
+                question = "How many branches does a starfish have";
+                answer[0] = "4";
+                answer[1] = "5";
+                answer[2] = "8";
+                answer[3] = "12";
+                goodAnswer = "5";
+                break;
+            default:
+                question = "Which animal is the emblem of the United States";
+                answer[0] = "Eagle";
+                answer[1] = "Snake";
+                answer[2] = "Ostrich";
+                answer[3] = "Tiger";
+                goodAnswer = "Eagle";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
 }

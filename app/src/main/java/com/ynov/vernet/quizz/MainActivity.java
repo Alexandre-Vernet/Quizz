@@ -47,14 +47,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (category) {
             // Generate question
-            case "computer":
-                goodAnswer = new Questions(this, this).computer();
-                break;
             case "art":
                 goodAnswer = new Questions(this, this).art();
                 break;
+            case "biology":
+                goodAnswer = new Questions(this, this).biology();
+                break;
             case "animals":
                 goodAnswer = new Questions(this, this).animals();
+                break;
+            case "movies":
+                goodAnswer = new Questions(this, this).movies();
+                break;
+            case "geography":
+                goodAnswer = new Questions(this, this).geography();
+                break;
+            case "computer":
+                goodAnswer = new Questions(this, this).computer();
+                break;
+            case "science":
+                goodAnswer = new Questions(this, this).science();
                 break;
         }
     }
