@@ -184,7 +184,7 @@
                     <ImageView
                         style="@style/category_imageview"
                         android:contentDescription="@string/movie_and_tv"
-                        android:src="@drawable/movie" />
+                        android:src="@drawable/popcorn" />
 
                     <TextView
                         style="@style/category_textview"
