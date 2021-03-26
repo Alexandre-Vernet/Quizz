@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView textViewQuestion;
+    TextView textViewNumberQuestion, textViewQuestion;
     Button[] btnAnswer = new Button[4];
     String goodAnswer;
     int score = 0;
-    int countQuestion = 0;
+    int countQuestion = 1;
 
     private static final String TAG = "MainActivity";
 
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        textViewNumberQuestion = findViewById(R.id.textViewNumberQuestion);
+        textViewNumberQuestion.setText("Question " + this.countQuestion + " / 10");
         textViewQuestion = findViewById(R.id.textViewQuestion);
 
         // Buttons
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnAnswer[i].setOnClickListener(this);
 
         // Get category sent via menu
-        getCategory();
+        this.getCategory();
     }
 
     // Get category of question
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         // Generate 10 questions
-        if (this.countQuestion >= 10) {
+        if (this.countQuestion == 10) {
             gameDone();
             return;
         }
@@ -108,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Get next question
         new Handler().postDelayed(this::getCategory, 200);
         countQuestion++;
+        textViewNumberQuestion.setText("Question " + this.countQuestion + " / 10");
     }
 
     public void goodAnswer() {
@@ -129,7 +132,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     // Reset score
                     this.score = 0;
-                    this.countQuestion = 0;
+                    this.countQuestion = 1;
+                    textViewNumberQuestion.setText("Question " + this.countQuestion + " / 10");
 
                     // Play again
                     new Handler().postDelayed(this::getCategory, 200);
@@ -147,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onBackPressed() {
-        if (this.countQuestion >= 1) {
+        if (this.countQuestion >= 2) {
             AlertDialog alertDialog = new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle(R.string.leave)
