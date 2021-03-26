@@ -129,137 +129,6 @@ public class Questions {
         return goodAnswer;
     }
 
-    public String kitchen() {
-
-        String question;
-        String[] answer = new String[4];
-
-        // Generate random question
-        Random random = new Random();
-        int randomQuestion = random.nextInt(14);
-
-        switch (randomQuestion) {
-            case 0:
-                question = "What is a bichon";
-                answer[0] = "Dog";
-                answer[1] = "Bird";
-                answer[2] = "The little dear";
-                answer[3] = "Cat";
-                goodAnswer = "Dog";
-                break;
-            case 1:
-                question = "What is a macaw";
-                answer[0] = "Horse";
-                answer[1] = "Parrot";
-                answer[2] = "Chicken farmer";
-                answer[3] = "Marrin mammal";
-                goodAnswer = "Parrot";
-                break;
-            case 2:
-                question = "What animal was Flipper in the TV series";
-                answer[0] = "Dolphin";
-                answer[1] = "Seal";
-                answer[2] = "Walrus";
-                answer[3] = "Whale";
-                goodAnswer = "Dolphin";
-                break;
-            case 3:
-                question = "What animal is the female of the wild boar";
-                answer[0] = "Sow";
-                answer[1] = "Hase";
-                answer[2] = "Trout";
-                answer[3] = "Laie";
-                goodAnswer = "Laie";
-                break;
-            case 4:
-                question = "How many legs do insects have";
-                answer[0] = "2";
-                answer[1] = "6";
-                answer[2] = "8";
-                answer[3] = "10";
-                goodAnswer = "6";
-                break;
-            case 5:
-                question = "Among these animals, which whistles";
-                answer[0] = "Cicada";
-                answer[1] = "Peacock";
-                answer[2] = "Swallow";
-                answer[3] = "Snake";
-                goodAnswer = "Snake";
-                break;
-            case 6:
-                question = "In which category of insect is the butterfly";
-                answer[0] = "Hymenoptera";
-                answer[1] = "Dipterers";
-                answer[2] = "Isoptera";
-                answer[3] = "Lepidoptera";
-                goodAnswer = "Lepidoptera";
-                break;
-            case 7:
-                question = "After the elephant, which land animal is the heaviest";
-                answer[0] = "Hippopotamus";
-                answer[1] = "Rhinoceros";
-                answer[2] = "Whale";
-                answer[3] = "Gorilla";
-                goodAnswer = "Rhinoceros";
-                break;
-            case 8:
-                question = "What type of animal is an ostrich";
-                answer[0] = "Mammal";
-                answer[1] = "Bird";
-                answer[2] = "Fish";
-                answer[3] = "Insect";
-                goodAnswer = "Bird";
-                break;
-            case 9:
-                question = "What is the other name of the cobra";
-                answer[0] = "Viper";
-                answer[1] = "Boa";
-                answer[2] = "Python";
-                answer[3] = "Naja";
-                goodAnswer = "Bird";
-                break;
-            case 10:
-                question = "Among these animals, which is the fastest";
-                answer[0] = "Cheetah";
-                answer[1] = "Leopard";
-                answer[2] = "Panther";
-                answer[3] = "Jaguar";
-                goodAnswer = "Leopard";
-                break;
-            case 11:
-                question = "What animal lives in a spawning ground";
-                answer[0] = "Fox";
-                answer[1] = "Salmon";
-                answer[2] = "Koala";
-                answer[3] = "Gander";
-                goodAnswer = "Salmon";
-                break;
-            case 12:
-                question = "How many branches does a starfish have";
-                answer[0] = "4";
-                answer[1] = "5";
-                answer[2] = "8";
-                answer[3] = "12";
-                goodAnswer = "5";
-                break;
-            default:
-                question = "Which animal is the emblem of the United States";
-                answer[0] = "Eagle";
-                answer[1] = "Snake";
-                answer[2] = "Ostrich";
-                answer[3] = "Tiger";
-                goodAnswer = "Eagle";
-        }
-
-        // Display questions
-        textViewQuestion.setText(question);
-        for (int i = 0; i < 4; i++)
-            btnAnswer[i].setText(answer[i]);
-
-        return goodAnswer;
-    }
-
     public String animals() {
 
         String question;
@@ -391,6 +260,136 @@ public class Questions {
         return goodAnswer;
     }
 
+    public String kitchen() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a capon ?";
+                answer[0] = "A young castrated chicken";
+                answer[1] = "A chicken over 5 years old";
+                answer[2] = "The little A sterile chicken";
+                answer[3] = "A wild goose";
+                goodAnswer = "A young castrated chicken";
+                break;
+            case 1:
+                question = "What fish do we make accras from ?";
+                answer[0] = "Wolf";
+                answer[1] = "Cod";
+                answer[2] = "Swordfish";
+                answer[3] = "Salmon";
+                goodAnswer = "Cod";
+                break;
+            case 2:
+                question = "What cream is made from crushed almonds ?";
+                answer[0] = "custard";
+                answer[1] = "Frangipane cream";
+                answer[2] = "Mascarpone cream";
+                answer[3] = "Whipped cream";
+                goodAnswer = "Frangipane cream";
+                break;
+            case 3:
+                question = "What dessert was discovered by chance following a mistake by two sisters ?";
+                answer[0] = "Apple pie";
+                answer[1] = "rum baba";
+                answer[2] = "Tarte tatin";
+                answer[3] = "Paris Brest";
+                goodAnswer = "Tarte tatin";
+                break;
+            case 4:
+                question = "Which of these fruits does not grow in a tree ?";
+                answer[0] = "Lemon";
+                answer[1] = "Pear";
+                answer[2] = "Guava";
+                answer[3] = "Melon";
+                goodAnswer = "Melon";
+                break;
+            case 5:
+                question = "What fruit do we make in guacamole ?";
+                answer[0] = "Tomato";
+                answer[1] = "Papaya";
+                answer[2] = "Avocado";
+                answer[3] = "Strawberry";
+                goodAnswer = "Avocado";
+                break;
+            case 6:
+                question = "What is a Provence violet ?";
+                answer[0] = "Artichoke";
+                answer[1] = "Grass";
+                answer[2] = "Olive producer";
+                answer[3] = "Fruit";
+                goodAnswer = "Artichoke";
+                break;
+            case 7:
+                question = "What fruit is Gariguette a variety ?";
+                answer[0] = "Cherry";
+                answer[1] = "Strawberry";
+                answer[2] = "Whale";
+                answer[3] = "Pear";
+                goodAnswer = "Strawberry";
+                break;
+            case 8:
+                question = "What country does broccoli come from ?";
+                answer[0] = "China";
+                answer[1] = "Belgium";
+                answer[2] = "Mexico";
+                answer[3] = "Italy";
+                goodAnswer = "Italy";
+                break;
+            case 9:
+                question = "What vegetable makes lovable ?";
+                answer[0] = "Beet";
+                answer[1] = "Avocado";
+                answer[2] = "Sucrine";
+                answer[3] = "Carrot";
+                goodAnswer = "Carrot";
+                break;
+            case 10:
+                question = "What is the name of a children's menu at Quick ?";
+                answer[0] = "Happy Meal";
+                answer[1] = "Magic Box";
+                answer[2] = "Baby Box";
+                answer[3] = "Children Meal";
+                goodAnswer = "Happy Meal";
+                break;
+            case 11:
+                question = "What fast food brand has the slogan 'so good' ?";
+                answer[0] = "KFC";
+                answer[1] = "Burger King";
+                answer[2] = "Mc Donald";
+                answer[3] = "Pizza Hut";
+                goodAnswer = "KFC";
+                break;
+            case 12:
+                question = "What is the specific element of croque madame ?";
+                answer[0] = "Tomato";
+                answer[1] = "Carrot";
+                answer[2] = "Egg";
+                answer[3] = "Salmon";
+                goodAnswer = "Salmon";
+                break;
+            default:
+                question = "What does the word kebab mean ?";
+                answer[0] = "Turkish";
+                answer[1] = "Grill";
+                answer[2] = "Sandwich";
+                answer[3] = "Lamb";
+                goodAnswer = "Grill";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
     public String movies() {
 
         String question;
@@ -737,6 +736,137 @@ public class Questions {
     }
 
     public String science() {
+
+        String question;
+        String[] answer = new String[4];
+
+        // Generate random question
+        Random random = new Random();
+        int randomQuestion = random.nextInt(14);
+
+        switch (randomQuestion) {
+            case 0:
+                question = "What is a bichon";
+                answer[0] = "Dog";
+                answer[1] = "Bird";
+                answer[2] = "The little dear";
+                answer[3] = "Cat";
+                goodAnswer = "Dog";
+                break;
+            case 1:
+                question = "What is a macaw";
+                answer[0] = "Horse";
+                answer[1] = "Parrot";
+                answer[2] = "Chicken farmer";
+                answer[3] = "Marrin mammal";
+                goodAnswer = "Parrot";
+                break;
+            case 2:
+                question = "What animal was Flipper in the TV series";
+                answer[0] = "Dolphin";
+                answer[1] = "Seal";
+                answer[2] = "Walrus";
+                answer[3] = "Whale";
+                goodAnswer = "Dolphin";
+                break;
+            case 3:
+                question = "What animal is the female of the wild boar";
+                answer[0] = "Sow";
+                answer[1] = "Hase";
+                answer[2] = "Trout";
+                answer[3] = "Laie";
+                goodAnswer = "Laie";
+                break;
+            case 4:
+                question = "How many legs do insects have";
+                answer[0] = "2";
+                answer[1] = "6";
+                answer[2] = "8";
+                answer[3] = "10";
+                goodAnswer = "6";
+                break;
+            case 5:
+                question = "Among these animals, which whistles";
+                answer[0] = "Cicada";
+                answer[1] = "Peacock";
+                answer[2] = "Swallow";
+                answer[3] = "Snake";
+                goodAnswer = "Snake";
+                break;
+            case 6:
+                question = "In which category of insect is the butterfly";
+                answer[0] = "Hymenoptera";
+                answer[1] = "Dipterers";
+                answer[2] = "Isoptera";
+                answer[3] = "Lepidoptera";
+                goodAnswer = "Lepidoptera";
+                break;
+            case 7:
+                question = "After the elephant, which land animal is the heaviest";
+                answer[0] = "Hippopotamus";
+                answer[1] = "Rhinoceros";
+                answer[2] = "Whale";
+                answer[3] = "Gorilla";
+                goodAnswer = "Rhinoceros";
+                break;
+            case 8:
+                question = "What type of animal is an ostrich";
+                answer[0] = "Mammal";
+                answer[1] = "Bird";
+                answer[2] = "Fish";
+                answer[3] = "Insect";
+                goodAnswer = "Bird";
+                break;
+            case 9:
+                question = "What is the other name of the cobra";
+                answer[0] = "Viper";
+                answer[1] = "Boa";
+                answer[2] = "Python";
+                answer[3] = "Naja";
+                goodAnswer = "Bird";
+                break;
+            case 10:
+                question = "Among these animals, which is the fastest";
+                answer[0] = "Cheetah";
+                answer[1] = "Leopard";
+                answer[2] = "Panther";
+                answer[3] = "Jaguar";
+                goodAnswer = "Leopard";
+                break;
+            case 11:
+                question = "What animal lives in a spawning ground";
+                answer[0] = "Fox";
+                answer[1] = "Salmon";
+                answer[2] = "Koala";
+                answer[3] = "Gander";
+                goodAnswer = "Salmon";
+                break;
+            case 12:
+                question = "How many branches does a starfish have";
+                answer[0] = "4";
+                answer[1] = "5";
+                answer[2] = "8";
+                answer[3] = "12";
+                goodAnswer = "5";
+                break;
+            default:
+                question = "Which animal is the emblem of the United States";
+                answer[0] = "Eagle";
+                answer[1] = "Snake";
+                answer[2] = "Ostrich";
+                answer[3] = "Tiger";
+                goodAnswer = "Eagle";
+        }
+
+        // Display questions
+        textViewQuestion.setText(question);
+        for (int i = 0; i < 4; i++)
+            btnAnswer[i].setText(answer[i]);
+
+        return goodAnswer;
+    }
+
+    public String sport() {
 
         String question;
         String[] answer = new String[4];

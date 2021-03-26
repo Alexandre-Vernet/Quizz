@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView;
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener {
 
     GridLayout gridLayout;
-    CardView[] cardViews = new CardView[7];
+    CardView[] cardViews = new CardView[8];
 
     private static final String TAG = "CategoryActivity";
 
@@ -33,6 +33,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         cardViews[4] = findViewById(R.id.geography);
         cardViews[5] = findViewById(R.id.computer);
         cardViews[6] = findViewById(R.id.science);
+        cardViews[7] = findViewById(R.id.sport);
 
         // Implement cards
         for (int i = 0; i < 7; i++)
@@ -70,13 +71,13 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.kitchen:
-                intent.putExtra("category", "kitchen");
+            case R.id.animals:
+                intent.putExtra("category", "animals");
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.animals:
-                intent.putExtra("category", "animals");
+            case R.id.kitchen:
+                intent.putExtra("category", "kitchen");
                 startActivity(intent);
                 finish();
                 break;
@@ -97,6 +98,11 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.science:
                 intent.putExtra("category", "science");
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.sport:
+                intent.putExtra("category", "sport");
                 startActivity(intent);
                 finish();
                 break;

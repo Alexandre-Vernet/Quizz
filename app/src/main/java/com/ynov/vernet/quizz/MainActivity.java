@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case "science":
                 goodAnswer = new Questions(this, this).science();
                 break;
+            case "sport":
+                goodAnswer = new Questions(this, this).sport();
+                break;
         }
     }
 
