@@ -16,6 +16,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textViewSolutionQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Question here"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textViewSolutionAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your answer"
@@ -43,6 +45,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textViewSolutionGoodAnswer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Good answer"

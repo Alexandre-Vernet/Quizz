@@ -2,6 +2,8 @@ package com.ynov.vernet.quizz;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -60,7 +62,7 @@ public class Questions {
                 answer[0] = "Fa Ta Pa";
                 answer[1] = "Force Tripe Prout";
                 answer[2] = "File Transfer Protocol";
-                answer[3] = "La réponse D";
+                answer[3] = "The Answer D";
                 goodAnswer = "File Transfer Protocol";
                 break;
             case 3:
@@ -108,6 +110,14 @@ public class Questions {
         textViewQuestion.setText(question);
         for (int i = 0; i < 4; i++)
             btnAnswer[i].setText(answer[i]);
+
+
+        // Save question & answer
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putString("question", question);
+        editor.putString("goodAnswer", goodAnswer);
+        editor.apply();
+
 
         return goodAnswer;
     }
