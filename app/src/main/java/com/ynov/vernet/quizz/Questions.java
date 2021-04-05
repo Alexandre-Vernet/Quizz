@@ -41,7 +41,7 @@ public class Questions {
 
         switch (randomQuestion) {
             case 0:
-                question = "What color are often the domes of churches in Russia?";
+                question = "What color are often the domes of churches in Russia ?";
                 answer[0] = "Yello colored";
                 answer[1] = "Gold colored";
                 answer[2] = "Blue colored";
@@ -49,7 +49,7 @@ public class Questions {
                 goodAnswer = "Gold colored";
                 break;
             case 1:
-                question = "In which Spanish city did the Joan Miro museum open in 1975?";
+                question = "In which Spanish city did the Joan Miro museum open in 1975 ?";
                 answer[0] = "Barcelona";
                 answer[1] = "Seville";
                 answer[2] = "Madrid";
@@ -57,7 +57,7 @@ public class Questions {
                 goodAnswer = "Barcelona";
                 break;
             case 2:
-                question = "In which country was the famous painter El Greco born?";
+                question = "In which country was the famous painter El Greco born ?";
                 answer[0] = "Greece";
                 answer[1] = "London";
                 answer[2] = "Paris";
@@ -65,7 +65,7 @@ public class Questions {
                 goodAnswer = "Greece";
                 break;
             case 3:
-                question = "In which city is the composer Frederic Chopin buried?";
+                question = "In which city is the composer Frederic Chopin buried ?";
                 answer[0] = "Paris";
                 answer[1] = "Marseille";
                 answer[2] = "Bordeaux";
@@ -73,7 +73,7 @@ public class Questions {
                 goodAnswer = "Paris";
                 break;
             case 4:
-                question = "Who did paint the famous painting Guernica?";
+                question = "Who did paint the famous painting Guernica ?";
                 answer[0] = "Monet";
                 answer[1] = "Van Gogh";
                 answer[2] = "Picasso";
@@ -81,7 +81,7 @@ public class Questions {
                 goodAnswer = "Picasso";
                 break;
             case 5:
-                question = "In which city did Romeo and Julia live?";
+                question = "In which city did Romeo and Julia live ?";
                 answer[0] = "Verona";
                 answer[1] = "Rome";
                 answer[2] = "Paris";
@@ -89,7 +89,7 @@ public class Questions {
                 goodAnswer = "Verona";
                 break;
             case 6:
-                question = "Which famous French engineer designed two bridges for the city of Porto?";
+                question = "Which famous French engineer designed two bridges for the city of Porto ?";
                 answer[0] = "Nikolas Tesla";
                 answer[1] = "James Watt";
                 answer[2] = "Thomas Edison";
@@ -97,7 +97,7 @@ public class Questions {
                 goodAnswer = "Gustave Eiffel";
                 break;
             case 7:
-                question = "In which English town did Adolf Hitler study art?";
+                question = "In which English town did Adolf Hitler study art ?";
                 answer[0] = "Berlin";
                 answer[1] = "James Watt";
                 answer[2] = "Manchester";
@@ -105,7 +105,7 @@ public class Questions {
                 goodAnswer = "Liverpool";
                 break;
             case 8:
-                question = "Who was the original author of Dracula?";
+                question = "Who was the original author of Dracula ?";
                 answer[0] = "Antoine de Saint Exupery";
                 answer[1] = "Bram Stoker";
                 answer[2] = "Charles Beaudelaire";
@@ -113,7 +113,7 @@ public class Questions {
                 goodAnswer = "Bram Stoker";
                 break;
             default:
-                question = "In which city can you see Michelangelo's David?";
+                question = "In which city can you see Michelangelo's David ?";
                 answer[0] = "New-York";
                 answer[1] = "Bordeaux";
                 answer[2] = "Florence";
@@ -140,7 +140,7 @@ public class Questions {
 
         switch (randomQuestion) {
             case 0:
-                question = "What is a bichon";
+                question = "What is a bichon ?";
                 answer[0] = "Dog";
                 answer[1] = "Bird";
                 answer[2] = "The little dear";
@@ -148,7 +148,7 @@ public class Questions {
                 goodAnswer = "Dog";
                 break;
             case 1:
-                question = "What is a macaw";
+                question = "What is a macaw ?";
                 answer[0] = "Horse";
                 answer[1] = "Parrot";
                 answer[2] = "Chicken farmer";
@@ -156,7 +156,7 @@ public class Questions {
                 goodAnswer = "Parrot";
                 break;
             case 2:
-                question = "What animal was Flipper in the TV series";
+                question = "What animal was Flipper in the TV series ?";
                 answer[0] = "Dolphin";
                 answer[1] = "Seal";
                 answer[2] = "Walrus";
@@ -164,7 +164,7 @@ public class Questions {
                 goodAnswer = "Dolphin";
                 break;
             case 3:
-                question = "What animal is the female of the wild boar";
+                question = "What animal is the female of the wild boar ?";
                 answer[0] = "Sow";
                 answer[1] = "Hase";
                 answer[2] = "Trout";
@@ -172,7 +172,7 @@ public class Questions {
                 goodAnswer = "Laie";
                 break;
             case 4:
-                question = "How many legs do insects have";
+                question = "How many legs do insects have ?";
                 answer[0] = "2";
                 answer[1] = "6";
                 answer[2] = "8";
@@ -180,7 +180,7 @@ public class Questions {
                 goodAnswer = "6";
                 break;
             case 5:
-                question = "Among these animals, which whistles";
+                question = "Among these animals, which whistles ?";
                 answer[0] = "Cicada";
                 answer[1] = "Peacock";
                 answer[2] = "Swallow";
@@ -188,7 +188,7 @@ public class Questions {
                 goodAnswer = "Snake";
                 break;
             case 6:
-                question = "In which category of insect is the butterfly";
+                question = "In which category of insect is the butterfly ?";
                 answer[0] = "Hymenoptera";
                 answer[1] = "Dipterers";
                 answer[2] = "Isoptera";
@@ -196,7 +196,7 @@ public class Questions {
                 goodAnswer = "Lepidoptera";
                 break;
             case 7:
-                question = "After the elephant, which land animal is the heaviest";
+                question = "After the elephant, which land animal is the heaviest ?";
                 answer[0] = "Hippopotamus";
                 answer[1] = "Rhinoceros";
                 answer[2] = "Whale";
@@ -204,7 +204,7 @@ public class Questions {
                 goodAnswer = "Rhinoceros";
                 break;
             case 8:
-                question = "What type of animal is an ostrich";
+                question = "What type of animal is an ostrich ?";
                 answer[0] = "Mammal";
                 answer[1] = "Bird";
                 answer[2] = "Fish";
@@ -212,7 +212,7 @@ public class Questions {
                 goodAnswer = "Bird";
                 break;
             case 9:
-                question = "What is the other name of the cobra";
+                question = "What is the other name of the cobra ?";
                 answer[0] = "Viper";
                 answer[1] = "Boa";
                 answer[2] = "Python";
@@ -220,7 +220,7 @@ public class Questions {
                 goodAnswer = "Bird";
                 break;
             case 10:
-                question = "Among these animals, which is the fastest";
+                question = "Among these animals, which is the fastest ?";
                 answer[0] = "Cheetah";
                 answer[1] = "Leopard";
                 answer[2] = "Panther";
@@ -228,7 +228,7 @@ public class Questions {
                 goodAnswer = "Leopard";
                 break;
             case 11:
-                question = "What animal lives in a spawning ground";
+                question = "What animal lives in a spawning ground ?";
                 answer[0] = "Fox";
                 answer[1] = "Salmon";
                 answer[2] = "Koala";
@@ -236,7 +236,7 @@ public class Questions {
                 goodAnswer = "Salmon";
                 break;
             case 12:
-                question = "How many branches does a starfish have";
+                question = "How many branches does a starfish have ?";
                 answer[0] = "4";
                 answer[1] = "5";
                 answer[2] = "8";
@@ -244,7 +244,7 @@ public class Questions {
                 goodAnswer = "5";
                 break;
             default:
-                question = "Which animal is the emblem of the United States";
+                question = "Which animal is the emblem of the United States ?";
                 answer[0] = "Eagle";
                 answer[1] = "Snake";
                 answer[2] = "Ostrich";
@@ -390,6 +390,7 @@ public class Questions {
 
         return goodAnswer;
     }
+
     public String movies() {
 
         String question;
@@ -532,7 +533,7 @@ public class Questions {
 
         switch (randomQuestion) {
             case 0:
-                question = "With which country France has no border";
+                question = "With which country France has no border ?";
                 answer[0] = "Belgium";
                 answer[1] = "Austria";
                 answer[2] = "Swiss";
@@ -540,7 +541,7 @@ public class Questions {
                 goodAnswer = "Austria";
                 break;
             case 1:
-                question = "What river crosses the city of Lyon";
+                question = "What river crosses the city of Lyon ?";
                 answer[0] = "Garonne";
                 answer[1] = "Seine";
                 answer[2] = "Rhin";
@@ -548,7 +549,7 @@ public class Questions {
                 goodAnswer = "Rhone";
                 break;
             case 2:
-                question = "What is the official language of Ireland";
+                question = "What is the official language of Ireland ?";
                 answer[0] = "Celtic";
                 answer[1] = "German";
                 answer[2] = "French";
@@ -556,7 +557,7 @@ public class Questions {
                 goodAnswer = "English";
                 break;
             case 3:
-                question = "What is the capital of Pakistan";
+                question = "What is the capital of Pakistan ?";
                 answer[0] = "Islamabad";
                 answer[1] = "Mogadishu";
                 answer[2] = "Kabul";
@@ -564,7 +565,7 @@ public class Questions {
                 goodAnswer = "Islamabad";
                 break;
             case 4:
-                question = "What color is on the German flag";
+                question = "What color is on the German flag ?";
                 answer[0] = "Black, Red, White";
                 answer[1] = "Black, Red, Yellow";
                 answer[2] = "Black, Red, Yellow";
@@ -572,7 +573,7 @@ public class Questions {
                 goodAnswer = "Black, Red, Yellow";
                 break;
             case 5:
-                question = "What is the capital of the Philippines";
+                question = "What is the capital of the Philippines ?";
                 answer[0] = "Jakarta";
                 answer[1] = "Wellington";
                 answer[2] = "Seoul";
@@ -580,7 +581,7 @@ public class Questions {
                 goodAnswer = "Manila";
                 break;
             case 6:
-                question = "On which island can we go to Mount Pelée";
+                question = "On which island can we go to Mount Pelée ?";
                 answer[0] = "Martinique";
                 answer[1] = "Guyana";
                 answer[2] = "Hawaii";
@@ -588,7 +589,7 @@ public class Questions {
                 goodAnswer = "Martinique";
                 break;
             case 7:
-                question = "What is the capital of the United States of America";
+                question = "What is the capital of the United States of America ?";
                 answer[0] = "New-York";
                 answer[1] = "Miami";
                 answer[2] = "Washington DC";
@@ -596,7 +597,7 @@ public class Questions {
                 goodAnswer = "Washington DC";
                 break;
             case 8:
-                question = "Which French department has why geography that the 16";
+                question = "Which French department has why geography that the 16 ?";
                 answer[0] = "Laude";
                 answer[1] = "L'aveyron";
                 answer[2] = "Le cantal";
@@ -604,7 +605,7 @@ public class Questions {
                 goodAnswer = "La charante";
                 break;
             case 9:
-                question = "What city is nicknamed the City of Kings";
+                question = "What city is nicknamed the City of Kings ?";
                 answer[0] = "Petra";
                 answer[1] = "Timbuktu";
                 answer[2] = "Beijing";
@@ -612,7 +613,7 @@ public class Questions {
                 goodAnswer = "Lima";
                 break;
             case 10:
-                question = "What city is nicknamed the city of seven hills";
+                question = "What city is nicknamed the city of seven hills ?";
                 answer[0] = "Rome";
                 answer[1] = "Paris";
                 answer[2] = "Barcelona";
@@ -620,7 +621,7 @@ public class Questions {
                 goodAnswer = "Rome";
                 break;
             case 11:
-                question = "What city is called the navel of the world";
+                question = "What city is called the navel of the world ?";
                 answer[0] = "Cuzco";
                 answer[1] = "Rome";
                 answer[2] = "Baghdad";
@@ -628,7 +629,7 @@ public class Questions {
                 goodAnswer = "Cuzco";
                 break;
             case 12:
-                question = "What country is called the flat country";
+                question = "What country is called the flat country ?";
                 answer[0] = "Netherlands";
                 answer[1] = "Belgium";
                 answer[2] = "Greece";
@@ -636,7 +637,7 @@ public class Questions {
                 goodAnswer = "Belgium";
                 break;
             default:
-                question = "How many French departments are there";
+                question = "How many French departments are there ?";
                 answer[0] = "99";
                 answer[1] = "101";
                 answer[2] = "108";
@@ -663,7 +664,7 @@ public class Questions {
 
         switch (randomQuestion) {
             case 0:
-                question = "What is the name of the network of computers from which the Internet has emerged?";
+                question = "What is the name of the network of computers from which the Internet has emerged ?";
                 answer[0] = "Arpanet";
                 answer[1] = "Internet";
                 answer[2] = "MySpace";
@@ -671,7 +672,7 @@ public class Questions {
                 goodAnswer = "Arpanet";
                 break;
             case 1:
-                question = "In what year was Google launched on the web?";
+                question = "In what year was Google launched on the web ?";
                 answer[0] = "2001";
                 answer[1] = "1999";
                 answer[2] = "1998";
@@ -679,7 +680,7 @@ public class Questions {
                 goodAnswer = "1998";
                 break;
             case 2:
-                question = "What does \"FTP\" stand for in the computer and internet world?";
+                question = "What does \"FTP\" stand for in the computer and internet world ?";
                 answer[0] = "Fa Ta Pa";
                 answer[1] = "Force Tripe Prout";
                 answer[2] = "File Transfer Protocol";
@@ -687,7 +688,7 @@ public class Questions {
                 goodAnswer = "File Transfer Protocol";
                 break;
             case 3:
-                question = "Which unit is an indication for the sound quality of MP3?";
+                question = "Which unit is an indication for the sound quality of MP3 ?";
                 answer[0] = "mp3";
                 answer[1] = "Kp";
                 answer[2] = "Pps";
@@ -695,7 +696,7 @@ public class Questions {
                 goodAnswer = "Kbps";
                 break;
             case 4:
-                question = "In computing what is Ram short for?";
+                question = "In computing what is Ram short for ?";
                 answer[0] = "Rare Access Military";
                 answer[1] = "Random Access Memory";
                 answer[2] = "Ram doesn't exist";
@@ -703,7 +704,7 @@ public class Questions {
                 goodAnswer = "Random Access Memory";
                 break;
             case 5:
-                question = "In which Nintendo DS game do you have to raise a puppy as well as possible?";
+                question = "In which Nintendo DS game do you have to raise a puppy as well as possible ?";
                 answer[0] = "Nintendogs";
                 answer[1] = "Animal crossing";
                 answer[2] = "Super Mario";
@@ -711,7 +712,7 @@ public class Questions {
                 goodAnswer = "Nintendogs";
                 break;
             case 6:
-                question = "What does USB stand for in the computer world?";
+                question = "What does USB stand for in the computer world ?";
                 answer[0] = "Universe Setup Bios";
                 answer[1] = "Universal Secret Bus";
                 answer[2] = "Use Scratch Bitch";
@@ -719,7 +720,7 @@ public class Questions {
                 goodAnswer = "Universal Serial Bus";
                 break;
             default:
-                question = "What is the country top-level domain of Belgium?";
+                question = "What is the country top-level domain of Belgium ?";
                 answer[0] = ".fr";
                 answer[1] = "The .be domain";
                 answer[2] = ".com";
@@ -996,5 +997,7 @@ public class Questions {
 
         return goodAnswer;
     }
+
+
 
 }
