@@ -88,33 +88,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             gameDone();
             return;
         }
-
-        switch (v.getId()) {
-            case R.id.btnAnswer_0:
-                if (goodAnswer == btnAnswer[0].getText())
-                    goodAnswer();
+        // Check which button was clicked
+        for (int i = 0; i < 4; i++) {
+            if (v.getId() == btnAnswer[i].getId()) {
+                checkAnswer(btnAnswer[i].getText().toString());
                 break;
-
-            case R.id.btnAnswer_1:
-                if (goodAnswer == btnAnswer[1].getText())
-                    goodAnswer();
-                break;
-
-            case R.id.btnAnswer_2:
-                if (goodAnswer == btnAnswer[2].getText())
-                    goodAnswer();
-                break;
-
-            case R.id.btnAnswer_3:
-                if (goodAnswer == btnAnswer[3].getText())
-                    goodAnswer();
-                break;
+            }
         }
 
         // Get next question
         new Handler().postDelayed(this::getCategory, 200);
         countQuestion++;
         textViewNumberQuestion.setText("Question " + this.countQuestion + " / 10");
+    }
+
+    // Method to check the selected answer
+    public void checkAnswer(String selectedAnswer) {
+        if (goodAnswer.equals(selectedAnswer)) {
+            goodAnswer();
+        }
     }
 
     public void goodAnswer() {

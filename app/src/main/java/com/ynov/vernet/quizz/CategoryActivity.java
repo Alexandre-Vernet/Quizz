@@ -3,7 +3,6 @@ package com.ynov.vernet.quizz;
 import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.widget.GridLayout;
@@ -15,8 +14,8 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
     GridLayout gridLayout;
     CardView[] cardViews = new CardView[8];
+    String[] categories = {"art", "kitchen", "animals", "movies", "geography", "computer", "science", "sport"};
 
-    private static final String TAG = "CategoryActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,47 +64,12 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
-        switch (v.getId()) {
-            case R.id.art:
-                intent.putExtra("category", "art");
+        for (int i = 0; i < cardViews.length; i++) {
+            if (v.getId() == cardViews[i].getId()) {
+                intent.putExtra("category", categories[i]);
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.animals:
-                intent.putExtra("category", "animals");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.kitchen:
-                intent.putExtra("category", "kitchen");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.movies:
-                intent.putExtra("category", "movies");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.geography:
-                intent.putExtra("category", "geography");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.computer:
-                intent.putExtra("category", "computer");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.science:
-                intent.putExtra("category", "science");
-                startActivity(intent);
-                finish();
-                break;
-            case R.id.sport:
-                intent.putExtra("category", "sport");
-                startActivity(intent);
-                finish();
-                break;
-        }
-    }
+            }
+        }    }
 }
